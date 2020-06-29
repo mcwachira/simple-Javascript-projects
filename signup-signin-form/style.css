@@ -1,0 +1,136 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body    {
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    height: 100vh;
+    font-size: 18px;
+}
+.container  {
+    margin: auto;
+    width: 50%;
+    height: 80vh;
+ 
+    position:absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background:linear-gradient(to bottom right, rgb(51, 51, 218),transparent);
+    box-shadow: 2px 2px 4px 4px;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+
+   
+   
+
+}
+
+
+
+.img-container  {
+
+   height: 100%;
+}
+.form-img   {
+
+    width: 50%;
+    height: 100%;
+  
+}
+
+#form   {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  
+ position: absolute;
+ top:10%;
+ left: 50%;
+ font-size: 22px;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+
+}
+
+input , select  {
+   
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+    opacity: none;
+    font-size: 18px;
+}
+input:focus , select:focus{ 
+    outline:none;
+    background-color: transparent;
+}
+
+#submit {
+    border: none;
+    font-size: 24px;
+    width: 70%;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 30px;
+    background: #4CAF50;
+    background: linear-gradient(to right bottom, rgb(98, 98, 155), rgb(248, 25, 163));
+    color: #fff;
+    cursor: pointer;
+    margin: 40px auto;
+    padding: 7px 10px;
+} 
+
+
+@media only screen and (max-width: 1200px) {
+    .container  {
+        width: 60%;
+    }
+  }
+
+  @media only screen and (max-width: 967px) {
+    .container  {
+        width: 70%;
+    }
+  }
+
+  @media only screen and (max-width: 860px) {
+    .container  {
+        width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 756px) {
+      .container{
+          width: 70%;
+       display: flex;
+       flex-direction: row;
+       justify-content:flex-start;
+       align-items: center;
+      }
+   .form-img{
+       display: none;
+   }
+   #form    {
+    margin-left: -150px;
+   }
+   .heading {
+       margin-bottom: 30px;
+     
+   }
+  
+  }
+  @media only screen and (max-width: 500px)     {
+      .container{
+          width: 90%;
+      }
+     
+  }

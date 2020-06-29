@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+    
+        <div class="img-container">
+            <img src="one.jpg" alt="form image" class="form-img">
+        </div>
+ 
+        <div class="form-container">
+         
+        <form id="form" action="#" method="post" enctyp="plain/text">
+            
+          
+            <h2 class="heading">    Registration info</h2>
+                <label id="name-label" >Name</label>
+            <input id="name" type ="text" name=" Name"  required value="">
+          
+            
+            
+            
+            <label id="number-label">Birthdate</label>
+            <input id="number"type ="date" required value="">
+          
+
+
+            <label for="dropdown" id="label">Gender</label>
+            <select id="dropdown" name="gender" required>
+                <option value="0">Gender</option>
+              <option value="1">Male</option>
+             <option value="2">Female</option>
+            </select>
+          
+            
+            <label id="email-label"> Email</label>
+            <input id="email" type ="email"  name="Your Email" required value="">
+          
+            <input id="submit" type ="submit" value="submit">
+           
+            </form>
+
+          
+        </div>
+
+            
+    </div>
+ 
+
+    <script src="app.js"></script>
+</body>
+</html>

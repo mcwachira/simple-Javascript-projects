@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+}
+.banner  {
+    display: flex;
+  margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height:200px;
+    background-color: blueviolet;
+    color:white;
+  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+span{
+    box-shadow: 1px solid;
+    font-size: 55px;
+    text-transform: uppercase;
+   
+}
+
+.clock  {
+    height: 200px;
+    margin:0;
+    background-color: rgb(94, 7, 175);
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+}
+

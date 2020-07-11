@@ -10,7 +10,7 @@ function displayTime()  {
     if(minutes < 10)    {
         minutes = "0" + minutes
     }
-    if(seconds < 1)    {
+    if(seconds < 10)    {
         seconds = "0" + seconds
     }
 

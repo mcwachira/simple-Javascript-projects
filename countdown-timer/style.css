@@ -1,0 +1,61 @@
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(241, 234, 224);
+}
+
+.banner {
+    height: 100px;
+    width: 70%;
+    background-color: blueviolet;
+    margin: 10% auto;
+    text-align: center;
+}
+
+.banner span{
+    font-size: 46px;
+    color: rgba(255, 255, 255, .78);
+   width: 50%;
+ 
+
+}
+
+
+#timer  {
+ display: flex;
+justify-content: space-between;
+
+padding: 50px;
+}
+
+#timer div  {
+    border : 30px  solid rgb(130, 130, 243);
+    height: 200px;
+    width: 200px;
+    background-color: rgb(165, 235, 25);
+    color: black;
+    font-size: 80px;
+    margin-top: 20px;
+    text-align: center;
+ 
+}
+
+p   {
+    font-size: 40px;
+}
+
+
+@media screen and (max-width:1000px)    {
+
+    #timer{
+    display:grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 20px;
+     align-items: center;
+    }
+}

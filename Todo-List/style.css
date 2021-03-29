@@ -1,0 +1,83 @@
+*   {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    background-color: #352f5b;
+    font-family: Helvetica, sans-serif;
+}
+
+
+ h1{
+     font-size: 40px;
+     color: wheat;
+     margin:20px auto;
+ }
+.container  {
+    margin:20px auto;
+    width:700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-form  {
+    margin:10px 0;
+}
+
+.todo-input {
+    padding: 10px 30px;
+    width:250px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.addBtn {
+    margin-right:20px;
+    padding: 10px 10px;
+}  
+
+.todo-items {
+list-style: none;
+    
+}
+
+
+.todo{
+
+    font-size: 2rem;
+    color: whitesmoke;
+    margin:10px 0;
+
+}
+
+.checkbox   {
+    margin-right:30px;
+    cursor: pointer;
+    
+    
+}
+.checked    {
+    text-decoration: line-through;
+}
+.delete{
+border: none;
+outline: none;
+border-radius: 7px;
+padding: 2px 5px;
+font-size:  1.2rem;
+float: right;
+margin-left: 40px;
+margin-top:5px;
+cursor: pointer;
+}
+
+
+
+

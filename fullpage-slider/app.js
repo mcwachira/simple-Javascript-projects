@@ -1,4 +1,4 @@
-confereence
+
 let slides = document.getElementsByClassName('images-style')
 
 let slider = 1

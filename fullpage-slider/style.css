@@ -11,20 +11,18 @@
 }
 .images-style {
     display: none;
-    /* opacity:0;
+     opacity:0;
    position: absolute;
    top:0;
    left: 0;
    width: 100%;
-   margin: auto; */
+   margin: auto;
 }
-
- /* .images-style.initial,
 .images-style.active  {
 
     opacity: 1;
     position: relative;
-}  */
+}
 
 .carousel__photo--prev  {
 transform: translateX(-100%);

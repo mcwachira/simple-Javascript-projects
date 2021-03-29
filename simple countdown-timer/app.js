@@ -16,8 +16,13 @@ if( seconds < 10)   {
     document.querySelector('.countDown').innerHTML =` ${minutes} :${seconds}`
 
         time--;
+        if(time === 0)   {
+minutes ===0
+seconds ===0
+        }
 
     
 }
 
 setInterval(countDown, 1000)
+

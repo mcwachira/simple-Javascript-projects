@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: linear-gradient(120deg, #f6d365, #fda085);
+  background-image: linear-gradient(120deg, #833ab4, #c13584);
   color: rgb(245, 234, 234);
   min-height: 100vh;
 }
@@ -22,24 +22,37 @@ form {
   align-items: center;
   justify-content: center;
 }
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 form input,
-form button {
+form button,
+.search input {
   font-size: 2rem;
   border: 0;
   padding: 0.5rem;
   background-color: white;
 }
 
+.search input {
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  min-width: 15%;
+  color: gray;
+  outline: none;
+}
 form button {
   background-color: #fff;
-  color: #f6d365;
+  color: #c13584;
   transition: all 0.5s;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: #f6d365;
+  background-color: #c13584;
   color: #fff;
 }
 
@@ -71,7 +84,7 @@ form button:hover {
 .complete-btn,
 .trash-btn {
   font-size: 1rem;
-  background: #f6d365;
+  background: #c13584;
   color: #fff;
   border: none;
   padding: 1rem;
@@ -79,7 +92,7 @@ form button:hover {
 }
 
 .complete-btn {
-  background-color: green;
+  background-color: #405de6;
 }
 
 .todo-item {
@@ -108,7 +121,7 @@ form button:hover {
 }
 
 select {
-  color: #ff6f47;
+  color: #c13584;
   width: 10rem;
   cursor: pointer;
   padding: 1rem;
@@ -116,7 +129,7 @@ select {
 .select::after {
   content: "\25BC";
   position: absolute;
-  background: #ff6f47;
+  background: #c13584;
   top: 0;
   right: 0;
   padding: 1rem;

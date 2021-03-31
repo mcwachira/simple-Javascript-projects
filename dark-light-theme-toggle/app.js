@@ -1,6 +1,6 @@
-const toggleBtn = document.querySelector(".toggle");
-const page = document.querySelector("body");
+const checkBox = document.getElementById("checkbox");
 
-toggleBtn.addEventListener("click", () => {
-  page.classList.toggle("colorChange");
+const page = document.querySelector("body");
+checkBox.addEventListener("click", () => {
+  page.classList.toggle("changeBackground");
 });

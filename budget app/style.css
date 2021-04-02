@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: royalblue;
+  color: #144;
+}
+
+.budget {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+  background: #fff;
+  width: 70%;
+  min-height: 50vh;
+  margin: 5rem auto;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+
+  /* grid-template-rows: 1fr; */
+}
+
+.expenses {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.expenses-header,
+.list-header {
+  margin: 0.5rem 4rem;
+  font-size: 1.3rem;
+}
+
+.expenseName {
+  width: 60%;
+  padding: 0.3rem;
+  margin: 0.5rem 0;
+  border: 1px solid #977;
+  border-radius: 2px;
+}
+label {
+  font-size: 1.4rem;
+  color: black;
+}
+.expenseAmount {
+  width: 60%;
+  padding: 0.3rem;
+  margin: 0.5rem 0;
+  border: 1px solid #977;
+  border-radius: 2px;
+}
+.addExpense {
+  width: 20%;
+  padding: 0.4rem;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.budgetValue,
+.budgetLeft {
+  background: rgb(209, 207, 207);
+  /* width: 80%; */
+  /* padding: 4rem 1rem; */
+  margin: 1.3rem auto;
+  border: 1px solid #977;
+  border-radius: 5px;
+  padding: 0.3rem 0.9rem;
+  color: blue;
+  font-size: 1.3rem;
+  font-family: serif;
+}
+
+.budgetValue::placeholder,
+.budgetLeft::placeholder {
+  color: blue;
+  font-size: 1.3rem;
+}
+
+.expenseStyle {
+  list-style: none;
+  font-size: 1.5rem;
+  border: 1px solid #544;
+  /* width: 0%; */
+  color: blue;
+  font-weight: 500;
+  margin: 0.5rem 1rem;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.expenseValue {
+  background: royalblue;
+  color: black;
+  border-radius: 8px;
+  padding: 0 1rem;
+}

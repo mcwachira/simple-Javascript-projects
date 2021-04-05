@@ -142,6 +142,46 @@ form.addEventListener(
   })
 );
 
+//firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyCbddMCcrLTso7gT6V4holCOThRcqVM_dA",
+  authDomain: "js-contact-form-78faa.firebaseapp.com",
+  databaseURL: "https://js-contact-form-78faa-default-rtdb.firebaseio.com",
+  projectId: "js-contact-form-78faa",
+  storageBucket: "js-contact-form-78faa.appspot.com",
+  messagingSenderId: "432312053878",
+  appId: "1:432312053878:web:bc3999e24cf2e3bdae2f57",
+};
+// Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
+
+var database = firebase.database();
+
+//create a functions to push
+const firebasePush = (input) => {
+  //prevents from braking
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
+
+  //push itself
+  let usernameRef = database.ref("userName").push().set({
+    user: input.value,
+  });
+  let mailsRef = database.ref("emails").push().set({
+    mail: input.value,
+  });
+
+  let passwordRef = database.ref("Password").push().set({
+    password: input.value,
+  });
+
+  let password1Ref = database.ref("Password").push().set({
+    password1: input.value,
+  });
+};
+
+//push on form submit
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let isNameValid = checkUserName(),
@@ -152,7 +192,8 @@ form.addEventListener("submit", (e) => {
     isNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid;
 
   if (isFormValid) {
-    console.log("success");
-  } else {
+    firebasePush(userName, emailValue, passwordValue, passwordValue1);
+    //shows alert if everything went well.
+    return alert("Data Successfully Sent to Realtime Database");
   }
 });

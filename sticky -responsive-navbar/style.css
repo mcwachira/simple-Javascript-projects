@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    min-height: 100vh;
+    font-family: serif;
+    font-size: 1.2rem;
+}
+
+
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+header .brand {
+    color: #422222;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all .6s;
+}
+
+header .btn {
+    font-size: 20px;
+    color: #fff;
+    display: none;
+}
+
+header.sticky {
+    background-color: blue;
+    padding: 20px 100px;
+}
+
+header .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+header .menu a {
+    text-decoration: none;
+    font-weight: 500;
+
+    margin: 0 30px;
+    padding: 0 10px;
+    color: #422222;
+    border-radius: 10px;
+}
+
+header .menu a:hover {
+    background-color: #fff;
+}
+
+
+.section-one {
+    position: relative;
+    background: url('crypto-background.jpg');
+    opacity: .7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-one h1 {
+    color: rgba(255, 255, 255, .7);
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 80px;
+}
+
+.section-text {
+    min-height: 100vh;
+    background-color: #422222;
+    color: #fff;
+    padding: 20px 10px;
+}
+
+@media screen and (max-width:991px) {
+
+    header .btn {
+        display: block;
+    }
+
+    header .menu {
+        position: fixed;
+        background-color: blue;
+        flex-direction: column;
+        min-width: 400px;
+        height: 100vh;
+        right: -100%;
+        top: 0;
+        padding: 80px 50px;
+        transition: .6s;
+        transform-origin: right;
+    }
+
+    header .menu.active {
+        right: 0;
+
+
+    }
+
+    header .menu .close-btn {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+    }
+
+    header .menu a {
+        display: block;
+        font-size: 20px;
+        margin: 20px;
+        padding: 0 15px;
+    }
+}

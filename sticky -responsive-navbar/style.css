@@ -7,10 +7,16 @@
 
 
 body {
-    min-height: 100vh;
+
     font-family: serif;
     font-size: 1.2rem;
+    min-height: 100vh;
+    background: url('crypto-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 
 header {
@@ -35,6 +41,7 @@ header .brand {
     transition: all .6s;
 }
 
+
 header .btn {
     font-size: 20px;
     color: #fff;
@@ -48,25 +55,9 @@ header.sticky {
 
 header .menu {
     position: relative;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-
-
-header .menu a {
-    text-decoration: none;
-    font-weight: 500;
-
-    margin: 0 30px;
-    padding: 0 10px;
-    color: #422222;
-    border-radius: 10px;
-}
-
-header .menu a:hover {
-    background-color: #fff;
+    align-items: center; */
 }
 
 
@@ -99,6 +90,79 @@ header .menu a:hover {
     padding: 20px 10px;
 }
 
+
+header .menu ul {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu li {
+    list-style: none;
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 30px;
+    padding: 0 10px;
+    color: #422222;
+    border-radius: 10px;
+}
+
+
+
+header .menu a:hover {
+    background-color: #fff;
+}
+
+
+header .menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    /* top: 0; */
+    border-radius: 10px;
+    border: 1px solid #222;
+    margin: 2rem 1rem;
+    height: 180px;
+    width: 150px;
+    background-color: #fff;
+
+    transition: all 1s;
+}
+
+header .menu .dropdown-menu li {
+    padding: 10px 10px;
+
+}
+
+header .menu .dropdown-menu li:hover {
+
+    background-color: #422222;
+    color: #fff;
+
+}
+
+header .menu .dropdown-menu li a {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 30px;
+    padding: 0 10px;
+    color: #422222;
+}
+
+header .menu .dropdown-menu li a:hover {
+    background: none;
+    color: #fff;
+}
+
+header .menu .dropdown-menu.display {
+    display: block;
+}
+
 @media screen and (max-width:991px) {
 
     header .btn {
@@ -108,7 +172,6 @@ header .menu a:hover {
     header .menu {
         position: fixed;
         background-color: blue;
-        flex-direction: column;
         min-width: 400px;
         height: 100vh;
         right: -100%;
@@ -116,6 +179,11 @@ header .menu a:hover {
         padding: 80px 50px;
         transition: .6s;
         transform-origin: right;
+    }
+
+    header .menu ul {
+
+        flex-direction: column;
     }
 
     header .menu.active {
@@ -137,5 +205,11 @@ header .menu a:hover {
         font-size: 20px;
         margin: 20px;
         padding: 0 15px;
+    }
+
+    header .menu .dropdown-menu {
+        top: 250px;
+        margin: 0 1rem;
+
     }
 }

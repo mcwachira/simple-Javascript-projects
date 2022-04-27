@@ -117,6 +117,10 @@ a {
     background-color: #e91e63;
 }
 
+.header .menu>.menu-item-has-children.active a .plus:after {
+    transform: translate(-50%, -50%) rotate(0deg)
+}
+
 .header .menu>.menu-item>.sub-menu {
     position: absolute;
     left: 0;
@@ -145,7 +149,7 @@ a {
 @media screen and (min-width:991px) {
     .header .menu>.menu-item>.sub-menu>.menu-item {
 
-        display: none;
+        display: flex;
     }
 }
 
@@ -237,6 +241,24 @@ a {
 
 .header .close-nav-menu span:after {
     top: 7px;
+}
+
+.header .menu-overlay {
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .5);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.header .menu-overlay.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* responsive */

@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home-section {
+    width: 100%;
+    min-height: 100vh;
+    background: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.container {
+    width: 1170px;
+    background-color: beige;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    margin: none;
+    padding: none;
+}
+
+.header-main {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    color: #333;
+
+}
+
+.header .logo {
+    padding: 0 15px;
+    color: #333;
+    font-size: 2rem;
+}
+
+.header .logo a {
+
+    color: #333;
+
+}
+
+.header .menu>.menu-item {
+    display: inline-block;
+    margin-left: 20px;
+    color: #333;
+    position: relative;
+}
+
+.header .menu>.menu-item a {
+    display: block;
+    color: #333;
+    padding: 20px 0;
+    margin: 0 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all .4s;
+}
+
+.header .menu>.menu-item:hover a {
+
+    color: #e91e63
+}
+
+.header .menu>.menu-item a .plus {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    position: relative;
+    margin-left: 5px;
+}
+
+.header .menu>.menu-item a .plus:before,
+.header .menu>.menu-item a .plus:after {
+
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    background-color: #000;
+    height: 2px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    transition: all .6 ease;
+}
+
+.header .menu>.menu-item a .plus:after {
+    transform: translate(-50%, -50%) rotate(90deg)
+}
+
+.header .menu>.menu-item:hover a .plus:before,
+.header .menu>.menu-item:hover a .plus:after {
+    transform: translate(-50%, -50%);
+    background-color: #e91e63;
+}
+
+.header .menu>.menu-item>.sub-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 220px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+    padding: 10px 0;
+    border-top: 3px solid #e91e63;
+    transform: translateY(10px);
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header .menu>.menu-item:hover>.sub-menu {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .menu>.menu-item>.sub-menu>.menu-item {
+    display: block;
+}
+
+.header .menu>.menu-item>.sub-menu>.menu-item>a {
+    display: block;
+    padding: 15px 20px;
+    color: #000;
+    transition: all .4s;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.header .menu>.menu-item>.sub-menu>.menu-item:hover>a {
+
+    color: #e91e63
+}
